@@ -6,7 +6,7 @@ Rutgers University Data Analytics Bootcamp Final Project
 |----------------------	|---------------------   | -------------                                                    |
 | [Shirali Obul](https://github.com/ShiraliObul)|  Project Manager    	 |  Manage the Project Presentation, Technology, and Communication  |
 | [Moya Heinzelmann](https://github.com/Moya112)    	|  Database Lead         |  Manage the Database and ETL Process                             |
-| [Seung Wook](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
+| [Seung-Wook Noh](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage the GitHub Repository and Presentation Dashboard         
 
 
