@@ -14,3 +14,6 @@ Rutgers University Data Analytics Bootcamp Final Project
 
 
 ## Questions We Woould Like to Answer:
+- Does bike lanes reduce accident?
+- Given the data available, can we expect an increase or decrese for accidents?
+- 
