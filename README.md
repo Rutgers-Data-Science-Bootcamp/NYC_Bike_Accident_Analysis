@@ -24,3 +24,4 @@ Rutgers University Data Analytics Bootcamp Final Project
   - Rain
   - Snow
 
+## Resources 
