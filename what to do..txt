@@ -1,0 +1,5 @@
+1. load the csv data on jupyter notebook
+
+2. clean the data (drop the duplicate data and no value data)
+
+3. work with module 8
