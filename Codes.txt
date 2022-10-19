@@ -1,0 +1,9 @@
+# Remove the Columns with no data(did not workout)
+bike_lane_df.drop(columns=["ft2facilit"], inplace=True)
+bike_lane_df.head()
+
+ft2facilit, tf2facilit, comments
+
+# Remove the Columns with no data
+bike_lane_df = bike_lane_df.drop(['ft2facilit'], axis=1)
+bike_lane_df.head()
