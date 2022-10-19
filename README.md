@@ -10,10 +10,10 @@ Rutgers University Data Analytics Bootcamp Final Project
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage the GitHub Repository and Presentation Dashboard         
 
 
-## Selected Topic: NYC Bike Lane Safty
+## Selected Topic: NYC Bike Lane Safety
 
 
-## Questions We Woould Like to Answer:
+## Questions We Would Like to Answer:
 - Does bike lanes reduce accident?
 - What are risk factors badsed on the given data?
   - Weather
@@ -25,7 +25,7 @@ Rutgers University Data Analytics Bootcamp Final Project
   - Snow
 
 ## Resources 
-### Description of data and Data sources
+### Description of data and data sources
 NYC_Bike_Risk -- This database uses a multitude of factors to input details on a bike accident:
 - 1st dataset contains location(longitutde, latitutde), borough, street, severity, time and date of accident over the course of 3 years from 2020-2022: 
 - [NYC-Crash-Cyclist-2020](https://data.cityofnewyork.us/Public-Safety/Crash-Cyclist-2020/2kbb-e72t/data)
