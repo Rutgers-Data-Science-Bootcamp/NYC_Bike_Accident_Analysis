@@ -52,6 +52,10 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - HTML
 - CSS
 
-## Database: 
+### Database: 
 - For our database, we will be using PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data.
+
+### Machine Learning
+Preliminary Data Processing 
+- 
 ## 🌳 Branch Information
