@@ -16,6 +16,8 @@ In order to keep updated on the status of each of our parts of the project, we m
 We want to build a model that will predict the safety of bike-riding on NYC streets depending on different factors.
 This information can be used by travelers and residents who are planing to ride bike in NYC.
 
+![queens-blvd](https://user-images.githubusercontent.com/105958160/196839331-7d5f1036-e870-4102-8f4d-5f1e01ac739b.jpeg)
+
 ## Questions We Would Like to Answer:
 - Does bike lanes reduce accident?
 - What are risk factors badsed on the given data?
