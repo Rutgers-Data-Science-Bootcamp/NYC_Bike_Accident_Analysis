@@ -9,9 +9,12 @@ Rutgers University Data Analytics Bootcamp Final Project
 | [Seung-Wook Noh](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage the GitHub Repository and Presentation Dashboard         
 
+## Communication Protocols
+In order to keep updated on the status of each of our parts of the project, we message each other regularly through Slack and organized regular zoom meetings.
 
 ## Selected Topic: NYC Bike Lane Safety
-
+We want to build a model that will predict the safety of bike-riding on NYC streets depending on different factors.
+This information can be used by travelers and residents who are planing to ride bike in NYC.
 
 ## Questions We Would Like to Answer:
 - Does bike lanes reduce accident?
