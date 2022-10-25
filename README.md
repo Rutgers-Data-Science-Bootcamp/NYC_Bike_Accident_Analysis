@@ -37,7 +37,7 @@ This information can be used by travelers and residents who are planing to ride 
 ### Description of data and data sources
 NYC_Bike_Risk -- This database uses a multitude of factors to input details on a bike accident:
 - 1st dataset contains location(longitutde, latitutde), borough, street, severity, time and date of accident over the course of 3 years from 2020-2022: 
-- [NYC-Crash-Cyclist-2020]([https://data.cityofnewyork.us/Public-Safety/Crash-Cyclist-2020/2kbb-e72t/data](https://data.cityofnewyork.us/Public-Safety/Crash-Cyclist-2020/2kbb-e72t))
+- [NYC-Crash-Cyclist-2020](https://data.cityofnewyork.us/Public-Safety/Crash-Cyclist-2020/2kbb-e72t)
 - 2nd dataset contains bike routesdata:
 - [NYC-Bike-Routes](https://data.cityofnewyork.us/Transportation/New-York-City-Bike-Routes/7vsa-caz7)
 - 3rd dataset contains zipcode for boroughs which allow us to fill up missing values in 1st dataset:
