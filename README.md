@@ -30,6 +30,8 @@ This information can be used by travelers and residents who are planing to ride 
 - How does different types of weather affect the frequency of bike accident?
   - Rain
   - Snow
+  - Invisibility
+  - Humidity
 
 ## Resources 
 ### Description of data and data sources
@@ -40,7 +42,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - [NYC-Bike-Routes](https://data.cityofnewyork.us/Transportation/New-York-City-Bike-Routes/7vsa-caz7)
 - 3rd dataset contains zipcode for boroughs which allow us to fill up missing values in 1st dataset:
 - [NYC-ZIPCODE-MAP](https://bklyndesigns.com/new-york-city-zip-code/#:~:text=Manhattan%3A%2010001%2D10282,11004%2D11109%2C%2011351%2D11697)
-- 4th dataset will be retrieve NYC weather data using OpenWeatherMap API for the days of accident happend:
+- 4th dataset is NYC weather data using OpenWeatherMap API for the days of accident happend:
 - [NYC-Weather-Data](https://openweathermap.org/city/5128581)
 
 
@@ -52,7 +54,6 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Pandas
 - Machine Learning
 - Scikit-Learn
-- Tensorflow
 #### Dashboard
 - Tableau
 - Javascript
@@ -60,7 +61,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - CSS
 
 ### Database: 
-- For our database, we will be using PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data.
+- For our database, we have used PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data.
 ![image](https://user-images.githubusercontent.com/105985796/196833444-2df3322e-5d16-4f90-b580-5caff7eca2cc.png)
 
 ### Machine Learning
