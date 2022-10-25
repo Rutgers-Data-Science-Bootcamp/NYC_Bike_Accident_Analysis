@@ -51,6 +51,8 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Amazon Web Services (AWS)
 #### Analyzing Data
 - Pandas
+- Numpy
+- Geopy
 - Machine Learning
 - Scikit-Learn
 #### Dashboard
