@@ -66,6 +66,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - NYC_bike_lanes: First we dropped the dupilcated rows based on STREET NAME to get unique streets with bike lane, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to to street). These news LAT1, LAT2, LON1, LON2 were used to get bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters. 
 - Final daset: contains NYC bike crash data, weathe data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected freatures selected for ML model training.     
 ### Database: 
+- Crash data and weather data are loaded into SQL database for merge, and also NYC_borough_zioccode data are stored in our database as tables;
 - For our database, we have used PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data.
 ![image](https://user-images.githubusercontent.com/105985796/196833444-2df3322e-5d16-4f90-b580-5caff7eca2cc.png)
 
