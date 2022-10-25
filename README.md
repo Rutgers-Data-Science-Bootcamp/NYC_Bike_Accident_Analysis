@@ -76,6 +76,5 @@ Preliminary Data Processing
 
 ### Dashboard
 - To exploratory analysis visualize the data we will use Tableau to create a dashboard
-- In addition to using a Flask template, we will also integrate D3.js (JavaScript ) for a fully functioning and interactive dashboard with . It will be hosted on Github page.
 
 
