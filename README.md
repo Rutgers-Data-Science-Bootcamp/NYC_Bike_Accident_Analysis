@@ -57,9 +57,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Scikit-Learn
 #### Dashboard
 - Tableau
-- Javascript
-- HTML
-- CSS
+- Google slide
 
 ## Data Cleaning and ETL process
 We have mainly used python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, NYC_Bike_Lanes.
