@@ -1,5 +1,5 @@
 # NYC Bike Risk Predictor
-Rutgers University Data Analytics Bootcamp Final Project
+Rutgers University Data Science Bootcamp Final Project
 
 ### Group Members:
 | Member               	| Role 	                 | Responsibilities                                                 |
