@@ -5,7 +5,7 @@ Rutgers University Data Science Bootcamp Final Project
 | Member               	| Role 	                 | Responsibilities                                                 |
 |----------------------	|---------------------   | -------------                                                    |
 | [Shirali Obul](https://github.com/ShiraliObul)|  Project Manager    	 |  Manage the Project flow, Technology and Communication  |
-| [Moya Heinzelmann](https://github.com/Moya112)    	|  Database Lead         |  Manage the Database and Loding data Process                             |
+| [Moya Heinzelmann](https://github.com/Moya112)    	|  Database Lead         |  Manage the Database and Loading data Process                             |
 | [Seung-Wook Noh](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage Tableau Dashboard, EDA and Presentation         
 
@@ -22,16 +22,17 @@ This information can be used by travelers and residents who are planing to ride 
 
 ## Questions We Would Like to Answer:
 - Does bike lanes reduce accident?
-- What are risk factors badsed on the given data?
+- What are the risk factors based on the given data?
   - Weather
   - Weekday
   - Time of day
   - Location (Borough)
-- How does different types of weather affect the frequency of bike accident?
+- How does different types of weather affect the frequency of bike accidents?
   - Rain
   - Snow
-  - Invisibility
+  - Visibility
   - Humidity
+  - Clear
 
 ## Resources 
 ### Description of data and data sources
@@ -44,7 +45,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - [NYC-ZIPCODE-MAP](https://bklyndesigns.com/new-york-city-zip-code/#:~:text=Manhattan%3A%2010001%2D10282,11004%2D11109%2C%2011351%2D11697)
 - 4th dataset is NYC weather data using OpenWeatherMap API for the days of accident happend:
 - [NYC-Weather-Data](https://openweathermap.org/city/5128581)
-- 
+
 ## Tools
 #### Creating Database
 - PostgreSQL
@@ -56,14 +57,14 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Scikit-Learn
 #### Dashboard
 - Tableau
-- Google slide
+- Google Slides
 
 ## Data Cleaning and ETL process
 We have mainly used python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, NYC_Bike_Lanes.
 - NYC_Crash_cyclist 2020-2022: Dropping columns without values and duplicated rows across all the columns, scraping missing zipcodes with geopy based on geolocation, filled missing borough names based on zipcode data; Transformed TIME of the accident to keep hours not minutes or seconds to be able to merge with weather data where have hourly weather;
 - NYC_Weather_2020-2022: hourly weather data from OpenWeatherMap for 1004 days in which accidents happended in NYC again cleaned and trasformed with python pandas library in jupyter notebook, such as datetime format for dates and times columns, with the formatting DATE column we were able to get Name of the weekday and months, we split it into DATE, NAME_OF_WEEKDAY, MONTH columns;
 - NYC_bike_lanes: First we dropped the dupilcated rows based on STREET NAME to get unique streets with bike lane, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to to street). These news LAT1, LAT2, LON1, LON2 were used to get bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters; 
-- Final daset: contains NYC bike crash data, weathe data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected freatures selected for ML model training;     
+- Final daset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training;     
 ### Database: 
 - Crash data and weather data are loaded into SQL database for merge, and also NYC_borough_zioccode data are stored in our database as tables;
 - For our database, we have used PostgreSQL by use of pgAdmin and we are also hosting our raw data in an AWS S3 bucket. This enables anyone with the access codes to work the project data.
