@@ -7,7 +7,7 @@ Rutgers University Data Science Bootcamp Final Project
 | [Shirali Obul](https://github.com/ShiraliObul)|  Project Manager    	 |  Manage the Project flow, Technology and Communication  |
 | [Moya Heinzelmann](https://github.com/Moya112)    	|  Database Lead         |  Manage the Database and Loding data Process                             |
 | [Seung-Wook Noh](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
-| [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage the GitHub Repository, Presentation and Tableau Dashboard         
+| [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage Tableau Dashboard, EDA and Presentation         
 
 ## Communication Protocols
 In order to keep updated on the status of each of our parts of the project, we message each other regularly through Slack and organized regular zoom meetings.
