@@ -74,6 +74,7 @@ Preliminary Data Processing
 - We will use supervised learning model with SciKitLearn random forest clustering algorithm to create a classifier for the safety of bike riding in New York City. Our training and testing setup will be the default 75% to 25% split. Our input will be bike lane, accident date and time, location, severity, mortality, and contributing factor vehicle. Our output labels will be safe or unsafe streets for bike-riding. 
 
 ### Dashboard
+[Tableau Link](https://public.tableau.com/app/profile/gerald.green7809/viz/NYCBikeRiskPredictor/BikeAccidentsMap#1)
 - To exploratory analysis visualize the data we will use Tableau to create a dashboard
 
 
