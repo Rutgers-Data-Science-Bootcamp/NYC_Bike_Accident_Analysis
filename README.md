@@ -48,7 +48,6 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 ## Tools
 #### Creating Database
 - PostgreSQL
-- Amazon Web Services (AWS)
 #### Analyzing Data
 - Pandas
 - Numpy
