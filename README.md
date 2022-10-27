@@ -49,7 +49,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 ## Tools
 #### Creating Database
 - PostgreSQL
-- SQL Light
+- SQLite
 #### Analyzing Data
 - Pandas
 - Numpy
@@ -61,11 +61,15 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Google Slides
 
 ## Data Cleaning and ETL process
-We have mainly used python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, NYC_Bike_Lanes.
+We use python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, and NYC_Bike_Lanes.
+
 - NYC_Crash_cyclist 2020-2022: Dropping columns without values and duplicated rows across all the columns, scraping missing zipcodes with geopy based on geolocation, filled missing borough names based on zipcode data; Transformed TIME of the accident to keep hours not minutes or seconds to be able to merge with weather data where have hourly weather;
-- NYC_Weather_2020-2022: hourly weather data from OpenWeatherMap for 1004 days in which accidents happended in NYC again cleaned and trasformed with python pandas library in jupyter notebook, such as datetime format for dates and times columns, with the formatting DATE column we were able to get Name of the weekday and months, we split it into DATE, NAME_OF_WEEKDAY, MONTH columns;
-- NYC_bike_lanes: First we dropped the dupilcated rows based on STREET NAME to get unique streets with bike lane, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to to street). These news LAT1, LAT2, LON1, LON2 were used to get bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters; 
-- Final dataset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training.     
+
+-  NYC_Crash_cyclist 2020-2022: Dropping columns without values and duplicated rows across all the columns, scraping missing zip codes with geopy based on geolocation, filled missing borough names based on zip code data; Transformed TIME of the accident to keep hours, not minutes or seconds to be able to merge with weather data where have hourly weather.
+
+- NYC_bike_lanes: First, we dropped the duplicated rows based on STREET NAME to get unique streets with bike lanes, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to street). This news LAT1, LAT2, LON1, and LON2 were used to get the bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters.
+
+- Final dataset: contains NYC bike crash data, weather data, and bike lane data, which we are using for EDA and Visualization with Tableau. Also, selected features are selected for ML model training. 
 
 ### Database: 
 - Crash data and weather data are loaded into SQL database for merge and merged with sql code, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder from where we are going to load merged_data by using SQLlight in our python code for further analysis and modelling. 
