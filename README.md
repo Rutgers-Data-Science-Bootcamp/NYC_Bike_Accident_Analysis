@@ -67,7 +67,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - Final dataset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training.     
 
 ### Database: 
-- Crash data and weather data are loaded into SQL database for merge, and also NYC_borough_zioccode data are stored in our database as tables;
+- Crash data and weather data are loaded into SQL database for merge and merged with sql code, and also NYC_borough_zioccode data are stored in our database as tables; We stored all the tables in our github database folder from where we are going to use SQLlight in our python code.  
 
 
 ### Machine Learning
