@@ -43,8 +43,8 @@ CREATE TABLE NYC_BOROUGH_ZIPCODE (
 
 -- Joining Weather with Crash
 
-create table merged_data (
-select c.*, w.*
+create table merged_data as (
+select distinct c.*, w.*
 from nyc_crash_cyclist c left join 
 nyc_weather_data w
 on c.times = w.times and c.dates = w.dates
