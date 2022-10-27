@@ -86,3 +86,4 @@ To visualize the data analysis we will use Tableau to create a dashboard.
 
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
+[Google Storyboard](https://app.boords.com/s/llowv4/frame)
