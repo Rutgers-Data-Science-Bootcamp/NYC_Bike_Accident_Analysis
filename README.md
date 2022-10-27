@@ -71,8 +71,9 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 
 
 ### Machine Learning
-Preliminary Data Processing 
-- We will use supervised learning model with SciKitLearn random forest clustering algorithm to create a classifier for the safety of bike riding in New York City. Our training and testing setup will be the default 75% to 25% split. Our input will be bike lane, accident date and time, location, severity, mortality, and contributing factor vehicle. Our output labels will be safe or unsafe streets for bike-riding. 
+Prepare the data for modelling: First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID);
+- We have tried supervised learning model with SciKitLearn random forest clustering algorithm to predict Bike lane based on the features we selected for the model.
+We split our data training and testing, and compare two ensemble algorithms to determine which algorithm results in the best performance. Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier . For each algorithm, we did folliowing steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classication report using the imbalanced_classification_report from imbalanced-learn. For the Balanced Random Forest Classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score Note: Use a random state of 1 for each algorithm to ensure consistency between tests
 
 ### Dashboard
 [Tableau Link](https://public.tableau.com/app/profile/gerald.green7809/viz/NYCBikeRiskPredictor/BikeAccidentsMap#1)
