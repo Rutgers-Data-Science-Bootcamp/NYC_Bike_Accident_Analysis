@@ -73,7 +73,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - ERD:
 - <img width="1347" alt="QuickERD" src="https://user-images.githubusercontent.com/65901034/198191925-afcc699e-388c-451f-86cd-049d23ef2cf9.png">
 - Tables post merge:
-<img width="1409" alt="Tables_post_merge" src="https://user-images.githubusercontent.com/65901034/198350933-77414e65-e573-49d1-a202-e32c5cb8bc4c.png">
+- <img width="1409" alt="Tables_post_merge" src="https://user-images.githubusercontent.com/65901034/198350933-77414e65-e573-49d1-a202-e32c5cb8bc4c.png">
 
 
 ### Machine Learning
