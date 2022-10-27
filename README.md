@@ -74,6 +74,10 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 Prepare the data for modelling: First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID);
 - We have tried supervised learning model with SciKitLearn random forest clustering algorithm to predict Bike lane based on the features we selected for the model. 
 - We split our data training and testing, and compare two ensemble algorithms to determine which algorithm results in the best performance. Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier. For each algorithm, we did following steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
+<img width="447" alt="Screen Shot 2022-10-27 at 12 19 30 AM" src="https://user-images.githubusercontent.com/65901034/198190482-5f122792-aeae-4371-94a4-9398e7129ef9.png">
+With Easy Ensemble AdaBoost classifier, we have imporved the accuracy to 80.5% from 78% with Balanced Random Forest Classifier:
+<img width="679" alt="Screen Shot 2022-10-27 at 12 21 24 AM" src="https://user-images.githubusercontent.com/65901034/198190732-a42f715d-82b8-4764-b537-df1001a44f20.png">
+
 - Make real meaning to the model rather than just predicting Bike lane, we are trying to see the features to calssify routes/areas safer or not safe if cyclist riding on bike lane or not. We did some EDA, please have a look and give your feedback on it. 
 
 
