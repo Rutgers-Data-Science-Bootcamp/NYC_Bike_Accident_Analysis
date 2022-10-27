@@ -70,8 +70,10 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 
 ### Database: 
 - Crash data and weather data are loaded into SQL database and merged with sql code. Crash_data, weather_data, merged data, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder as well as we have our local database from where we are going to load merged_data by using SQLite in our python code for further analysis and modelling.
+- ERD:
 - <img width="1347" alt="QuickERD" src="https://user-images.githubusercontent.com/65901034/198191925-afcc699e-388c-451f-86cd-049d23ef2cf9.png">
- 
+- Tables post merge:
+<img width="1409" alt="Tables_post_merge" src="https://user-images.githubusercontent.com/65901034/198350933-77414e65-e573-49d1-a202-e32c5cb8bc4c.png">
 
 
 ### Machine Learning
