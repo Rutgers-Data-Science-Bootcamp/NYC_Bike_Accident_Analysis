@@ -79,7 +79,7 @@ The result of Balanced Random Forest Classifier:
 With Easy Ensemble AdaBoost classifier, we have imporved the accuracy to 80.5% from 78.3% with Balanced Random Forest Classifier:
 <img width="679" alt="Screen Shot 2022-10-27 at 12 21 24 AM" src="https://user-images.githubusercontent.com/65901034/198190732-a42f715d-82b8-4764-b537-df1001a44f20.png">
 
-- Make real meaning to the model rather than just predicting Bike lane, we are trying to see the features to calssify routes/areas safer or not safe if cyclist riding on bike lane or not. We did some EDA, please have a look and give your feedback on it. 
+- Make real meaningful insights from the model rather than just predicting Bike lane, we are trying to see the features to calssify streets/areas safer or not safe if cyclist riding on bike lane or not. We did some EDA, please have a look and give your feedback on it. 
 
 
 ### Dashboard
