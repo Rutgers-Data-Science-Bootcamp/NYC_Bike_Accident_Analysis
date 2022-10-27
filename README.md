@@ -67,13 +67,14 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - Final dataset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training.     
 
 ### Database: 
-- Crash data and weather data are loaded into SQL database for merge and merged with sql code, and also NYC_borough_zioccode data are stored in our database as tables; We stored all the tables in our github database folder from where we are going to use SQLlight in our python code.  
+- Crash data and weather data are loaded into SQL database for merge and merged with sql code, and also NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder from where we are going to use SQLlight in our python code.  
 
 
 ### Machine Learning
 Prepare the data for modelling: First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID);
 - We have tried supervised learning model with SciKitLearn random forest clustering algorithm to predict Bike lane based on the features we selected for the model. 
 - We split our data training and testing, and compare two ensemble algorithms to determine which algorithm results in the best performance. Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier. For each algorithm, we did following steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
+- Make real meaning to the model rather than just predicting Bike lane, we are trying to see the features to calssify routes/areas safer or not safe if cyclist riding on bike lane or not. We did some EDA, please have a look and give your feedback on it. 
 
 
 ### Dashboard
