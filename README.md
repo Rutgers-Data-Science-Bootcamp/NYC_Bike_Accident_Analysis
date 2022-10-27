@@ -69,7 +69,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - Final dataset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training.     
 
 ### Database: 
-- Crash data and weather data are loaded into SQL database for merge and merged with sql code, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder from where we are going to load merged_data by using SQLite in our python code for further analysis and modelling.
+- Crash data and weather data are loaded into SQL database and merged with sql code. Crash_data, weather_data, merged data, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder as well as we have our local database from where we are going to load merged_data by using SQLite in our python code for further analysis and modelling.
 - <img width="1347" alt="QuickERD" src="https://user-images.githubusercontent.com/65901034/198191925-afcc699e-388c-451f-86cd-049d23ef2cf9.png">
  
 
