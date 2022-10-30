@@ -49,7 +49,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 ## Tools
 #### Creating Database
 - PostgreSQL
-- SQLite
+- SQLAlchemy
 #### Analyzing Data
 - Pandas
 - Numpy
@@ -90,7 +90,7 @@ Prepare the data for modelling: First we checked categorical and numerical data 
 
 
 ### Dashboard
-[Tableau Link](https://public.tableau.com/app/profile/gerald.green7809/viz/NYCBikeRiskPredictor/BikeAccidentsMap#1)
+[Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
 
 To visualize the data analysis we will use Tableau to create a dashboard. 
 - Bike Accidents Map
