@@ -49,7 +49,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 ## Tools
 #### Creating Database
 - PostgreSQL
-- SQLite
+- SQLAlchemy
 #### Analyzing Data
 - Pandas
 - Numpy
