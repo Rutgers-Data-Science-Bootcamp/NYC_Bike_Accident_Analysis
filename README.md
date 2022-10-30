@@ -9,12 +9,8 @@ Rutgers University Data Science Bootcamp Final Project
 | [Seung-Wook Noh](https://github.com/noahnohisalwaysgood)       	|  Machine Learning Lead |  Manage the Machine Learning Model and Design 	                |
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage Tableau Dashboard, EDA and Presentation         
 
-## Communication Protocols
-In order to keep updated on the status of each of our parts of the project, we message each other regularly through Slack and organized regular zoom meetings.
-
 ## Selected Topic: NYC Bike Lane Safety
-We want to build a model that will predict the safety of bike-riding on NYC streets depending on different factors.
-This information can be used by travelers and residents who are planing to ride bike in NYC.
+We want to analyse bike accidents across the New York city from Jan-2020 to October-2022 and to make a model where you can feed it with updated data from the original sources to predict wether the accident happended on bike lane or not. By doing exploratory data analysis and visualization, we want to have insights of the bike riding risk in NYC at different time of the day, weekdays, months, and streets. We aim to provide information which can be used by travelers and residents who are planing to ride bike in NYC and also first line responders to take action based on accidients wether on bike lane or not.
 
 <p align="center">
 <img width="800" height="600" src="https://user-images.githubusercontent.com/105958160/196839331-7d5f1036-e870-4102-8f4d-5f1e01ac739b.jpeg">
