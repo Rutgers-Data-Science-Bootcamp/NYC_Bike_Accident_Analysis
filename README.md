@@ -80,18 +80,12 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 - For each algorithm, we did following steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
 - The result of Balanced Random Forest Classifier:
 - ![Screen Shot 2022-10-30 at 10 50 22 PM](https://user-images.githubusercontent.com/65901034/198920891-7ba4858e-2685-4c0e-87db-d87868377b06.png)
-- With Easy Ensemble AdaBoost classifier, we have imporved the accuracy to 80.5% from 78.3% with Balanced Random Forest Classifier, however, it took more times to exucte :
+- With Easy Ensemble AdaBoost classifier, we have imporved the accuracy to 80.56% from 80.26% with Balanced Random Forest Classifier, however, it took more times to exucte as we can see in the screenshots:
 
 - ![Screen Shot 2022-10-30 at 10 51 28 PM](https://user-images.githubusercontent.com/65901034/198921048-d2073226-5af3-4153-b759-cf5a6e0a468a.png)
 
 -Feature importance from the Balanced Random Forest Classifier with 100 iteration:
 - ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
-
-
-
-
-- 
-
 
 ### Dashboard
 [Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
