@@ -73,7 +73,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 
 
 ### Machine Learning
-- After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare for ML from Merged_data table, and loaded it into the database as ML_data table. From this dynamic database, read the ML_data table and printed out the header for each column to see all of the features available; 
+- After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare data for ML, and loaded it into the database as ML_data table. From this dynamic database, read the ML_data table and printed out the header for each column to see all of the features available; 
 - <img width="1385" alt="Screen Shot 2022-10-30 at 10 57 30 PM" src="https://user-images.githubusercontent.com/65901034/198922259-74974974-9403-4c5c-99e6-2eac201383de.png">
 - First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID); 
 - We split our data training and testing. We used the default 75% to 25% split;
