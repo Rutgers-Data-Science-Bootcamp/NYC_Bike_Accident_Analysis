@@ -73,8 +73,9 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 
 
 ### Machine Learning
-- Prepare the data for modelling: First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID);
-- After connecting to the database, we printed out the header for each column to see all of the features available. From that list, we chose the features that we believed would have the highest correlation with crash severity;
+- After connecting our jupyter notebook to the database by SQLAlchemy, performed data cleaning to prepare for ML from Merged_data table, and save it into the database as ML_data table. Then we read the ML_data from the database, printed out the header for each column to see all of the features available. 
+- <img width="1385" alt="Screen Shot 2022-10-30 at 10 57 30 PM" src="https://user-images.githubusercontent.com/65901034/198922259-74974974-9403-4c5c-99e6-2eac201383de.png">
+- First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID); 
 - We split our data training and testing. We used the default 75% to 25% split;
 - We have tried supervised learning imblearn.ensemble library, we trained and compared two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict Bike lane based on the features we selected for the model. Using both algorithms, we resampled the dataset, view the count of the target classes, trained the ensemble classifier, calculated the balanced accuracy score, generated a confusion matrix, and generate a classification report. We chose Random forest algorithms because it can handle thousands of input variables without variable deletion, robust to outliers and nonlinear data, and also run efficiently on large datasets as we have it here; In order to improve the accurace of prediction, we used Adaptive Boosting, called AdaBoost, is easy to understand. In AdaBoost, a model is trained then evaluated. After evaluating the errors of the first model, another model is trained. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models.
 - For each algorithm, we did following steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
@@ -84,7 +85,7 @@ We have mainly used python pandas library in Jupyter notebook to clean the data 
 
 - ![Screen Shot 2022-10-30 at 10 51 28 PM](https://user-images.githubusercontent.com/65901034/198921048-d2073226-5af3-4153-b759-cf5a6e0a468a.png)
 
--Feature importance from the Balanced Random Forest Classifier with 100 iteration:
+- Feature importance from the Balanced Random Forest Classifier with 100 iteration:
 - ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
 
 ### Dashboard
