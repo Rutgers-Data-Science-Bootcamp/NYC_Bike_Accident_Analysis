@@ -10,7 +10,7 @@ Rutgers University Data Science Bootcamp Final Project
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage Tableau Dashboard, EDA and Presentation         
 
 ## Selected Topic: NYC Bike Lane Safety
-We want to analyse bike accidents across the New York city from Jan-2020 to October-2022 and to make a model where we can feed it with updated satatic data from the original sources, perform ETL and to predict wether the accident happended on bike lane or not. By doing exploratory data analysis and visualization, we want to have insights of the bike riding risk in NYC at different time of the day, weekdays, months, and streets. We aim to provide information which can be used by travelers and residents who are planing to ride bike in NYC and also first line responders to take action based on accidients wether on bike lane or not.
+We want to analyse bike accidents across the New York city from Jan-2020 to October-2022. Using machine learning model which can be feeded with static/updated data from the original sources, then perform ETL, and run the model to predict wether the accident happended on bike lane or not. Inaddition to that, by doing comprehensive exploratory data analysis and visualizations, we want to have insights of the bike riding risk in NYC at different time of the day, weekdays, months, and streets. We aim to provide information which can be used by travelers and residents who are planing to ride bike in NYC and also first line responders to take action based on accidients wether on bike lane or not.
 
 <p align="center">
 <img width="800" height="600" src="https://user-images.githubusercontent.com/105958160/196839331-7d5f1036-e870-4102-8f4d-5f1e01ac739b.jpeg">
