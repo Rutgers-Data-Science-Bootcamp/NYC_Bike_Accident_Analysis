@@ -10,7 +10,7 @@ Rutgers University Data Science Bootcamp Final Project
 | [Vanessa Cartagena](https://github.com/Vanessa-Cartagena)    	|  Dashboard Lead  	     |  Manage Tableau Dashboard, EDA and Presentation         
 
 ## Selected Topic: NYC Bike Lane Safety
-We want to analyse bike accidents across the New York city from Jan-2020 to October-2022 by performing comprehensive exploratory data analysis and visualizations to have insights of the bike riding risk in NYC at different time of the day, weekdays, months, and streets. In addition, using machine learning model which can be feeded with static/updated data from the original sources, follwed by ETL process, and run the model to predict wether the accident happended on bike lane or not. We aim to provide information which can be used by travelers and residents who are planing to ride bike in NYC and also first line responders to take action based on accidients wether on bike lane or not. 
+For this project, we analyze bike accidents across New York City from January 2020 to October 2022 by performing comprehensive exploratory data analysis and visualizations to have insights into the bike riding risk in NYC at different times of the day, weekdays, months, and streets. Bicycle trips make up about one percent of trips in the united states. However, it accounts for over two percent of people who die in motor vehicle crashes. Therefore, in large cities such as New York, residents and travelers must know which areas are safest at a given time of day. To generate this data, we created a machine learning model that can be fed with static/updated data from the sources, followed by the ETL process, and run the model to predict whether the accident happened on the bike lane. We aim to provide information that travelers and residents can use to plan bike rides in NYC and also first-line responders to take action based on accidents, whether on bike lanes or not.
 
 <p align="center">
 <img width="800" height="600" src="https://user-images.githubusercontent.com/105958160/196839331-7d5f1036-e870-4102-8f4d-5f1e01ac739b.jpeg">
@@ -58,35 +58,48 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 
 
 ## Data Cleaning and ETL process
-We have mainly used python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, NYC_Bike_Lanes.
-- NYC_Crash_cyclist 2020-2022: Dropping columns without values and duplicated rows across all the columns, scraping missing zipcodes with geopy based on geolocation, filled missing borough names based on zipcode data; Transformed TIME of the accident to keep hours not minutes or seconds to be able to merge with weather data where have hourly weather;
-- NYC_Weather_2020-2022: hourly weather data from OpenWeatherMap for 1004 days in which accidents happended in NYC again cleaned and trasformed with python pandas library in jupyter notebook, such as datetime format for dates and times columns, with the formatting DATE column we were able to get Name of the weekday and months, we split it into DATE, NAME_OF_WEEKDAY, MONTH columns;
-- NYC_bike_lanes: First we dropped the dupilcated rows based on STREET NAME to get unique streets with bike lane, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to to street). These news LAT1, LAT2, LON1, LON2 were used to get bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters; 
-- Final dataset: contains NYC bike crash data, weather data, and bike lane data all together which we are using for EDA and Visualization with Tableau. Selected features selected for ML model training.     
+We have mainly used Python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, and NYC_Bike_Lanes.
+
+- NYC_Crash_cyclist 2020-2022: Dropping columns without values and duplicated rows across all the columns, scraping missing zip codes with geopy based on geolocation, filled missing borough names based on zip code data; Transformed TIME of the accident to keep hours, not minutes or seconds to be able to merge with weather data where have hourly weather.
+
+- NYC_Weather_2020-2022: hourly weather data from OpenWeatherMap for 1004 days in which accidents happened in NYC again cleaned and transformed with python pandas library in jupyter notebooks, such as DateTime format for dates and times columns, with the formatting DATE column we were able to get Name of the weekday and months, we split it into DATE, NAME_OF_WEEKDAY, MONTH columns.
+
+- NYC_bike_lanes: First, we dropped the duplicated rows based on STREET NAME to get unique streets with bike lanes, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to street). This news LAT1, LAT2, LON1, and LON2 were used to get the bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters.
+
+- Final dataset: contains NYC bike crash data, weather data, and bike lane data, which we are using for EDA and Visualization with Tableau. Also, selected features are selected for ML model training.      
 
 ### Database: 
-- Crash data and weather data are loaded into SQL database and merged with sql code. Crash_data, weather_data, merged data, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our github database folder as well as we have our local database from where we are going to load merged_data by using SQLite in our python code for further analysis and modelling.
+- Crash and weather data are loaded into the SQL database and merged with SQL code. Crash_data, weather_data, merged data, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our GitHub database folder as well as we have our local database from where we are going to load merged_data by using SQLite in our python code for further analysis and modeling.
+
 - ERD:
-- <img width="1347" alt="QuickERD" src="https://user-images.githubusercontent.com/65901034/198191925-afcc699e-388c-451f-86cd-049d23ef2cf9.png">
+<img width="1347" alt="QuickERD" src="https://user-images.githubusercontent.com/65901034/198191925-afcc699e-388c-451f-86cd-049d23ef2cf9.png">
+
 - Tables post merge:
 - <img width="1409" alt="Tables_post_merge" src="https://user-images.githubusercontent.com/65901034/198350933-77414e65-e573-49d1-a202-e32c5cb8bc4c.png">
 
 
 ### Machine Learning
-- After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare data for ML, and loaded it into the database as ML_data table. From this dynamic database, read the ML_data table and printed out the header for each column to see all of the features available; 
-- <img width="1385" alt="Screen Shot 2022-10-30 at 10 57 30 PM" src="https://user-images.githubusercontent.com/65901034/198922259-74974974-9403-4c5c-99e6-2eac201383de.png">
-- First we checked categorical and numerical data in the dataset, based on the features we selected columns which might be important for the modelling and dropped columns which have same information with others or no value on the prediction (such as DATE and COLIISION ID); 
-- We split our data training and testing. We used the default 75% to 25% split;
-- We have tried supervised learning imblearn.ensemble library, we trained and compared two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict Bike lane based on the features we selected for the model. Using both algorithms, we resampled the dataset, view the count of the target classes, trained the ensemble classifier, calculated the balanced accuracy score, generated a confusion matrix, and generate a classification report. We chose Random forest algorithms because it can handle thousands of input variables without variable deletion, robust to outliers and nonlinear data, and also run efficiently on large datasets as we have it here; In order to improve the accurace of prediction, we used Adaptive Boosting, called AdaBoost, is easy to understand. In AdaBoost, a model is trained then evaluated. After evaluating the errors of the first model, another model is trained. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models;
-- For each algorithm, we did following steps: train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (most important feature to least important) along with the feature score;
-- The result of Balanced Random Forest Classifier:
-- ![Screen Shot 2022-10-30 at 10 50 22 PM](https://user-images.githubusercontent.com/65901034/198920891-7ba4858e-2685-4c0e-87db-d87868377b06.png)
-- With Easy Ensemble AdaBoost classifier, we have imporved the accuracy to 80.56% from 80.26% with Balanced Random Forest Classifier, however, it took more times to exucte as we can see in the screenshots:
+- After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare data for ML and loaded it into the database as an ML_data table. From this dynamic database, read the ML_data table and print out the header for each column to see all of the features available. 
 
-- ![Screen Shot 2022-10-30 at 10 51 28 PM](https://user-images.githubusercontent.com/65901034/198921048-d2073226-5af3-4153-b759-cf5a6e0a468a.png)
+<img width="1385" alt="Screen Shot 2022-10-30 at 10 57 30 PM" src="https://user-images.githubusercontent.com/65901034/198922259-74974974-9403-4c5c-99e6-2eac201383de.png">
+
+- First, we checked categorical and numerical data in the dataset. Then, based on the features, we selected columns that might be important for the modeling and dropped columns that have duplicate information with others or no value on the prediction (such as DATE and COLLISION ID).
+
+- We split our data training and testing. We used the default 75% to 25% split.
+
+- We have tried supervised learning imblearn.ensemble library trained and compared two different ensemble classifiers. Balanced Random Forest Classifier and Easy Ensemble Classifier to predict bike lanes based on the features we selected for the model. Using both algorithms, we resampled the dataset, viewed the target classes' count, trained the ensemble classifier, calculated the balanced accuracy score, generated a confusion matrix, and developed a classification report. We chose Random forest algorithms because they can handle thousands of input variables without variable deletion, robust to outliers and nonlinear data, and run efficiently on large datasets, as we have here. To improve prediction accuracy, we used Adaptive Boosting, called AdaBoost, which is easy to understand. In AdaBoost, a model is trained and then evaluated. After evaluating the errors of the first model, another model is introduced. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models.
+
+- For each algorithm, we train the model using the training data. Calculate the balanced accuracy score from sklearn.metrics. Print the confusion matrix from sklearn.metrics. Finally, generate a classification report using the imbalanced_classification_report from imbalanced-learn. Print the feature importance sorted in descending order (a most important feature to least significant) along with the feature score.
+
+- The result of Balanced Random Forest Classifier:
+![Screen Shot 2022-10-30 at 10 50 22 PM](https://user-images.githubusercontent.com/65901034/198920891-7ba4858e-2685-4c0e-87db-d87868377b06.png)
+
+- With the Easy Ensemble AdaBoost classifier, we have improved the accuracy to 80.56% from 80.26% with the Balanced Random Forest Classifier. However, it took more time to execute, as we can see in the screenshots:
+
+![Screen Shot 2022-10-30 at 10 51 28 PM](https://user-images.githubusercontent.com/65901034/198921048-d2073226-5af3-4153-b759-cf5a6e0a468a.png)
 
 - Feature importance from the Balanced Random Forest Classifier with 100 iteration:
-- ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
+![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
 
 ##### Disadvanatges
 
