@@ -123,7 +123,7 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 
 
 ### Dashboard
-[Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
+[Tableau Link](https://public.tableau.com/app/profile/gerald.green7809/viz/NYCBikeRiskProject/Boroughs_1#1)
 
 To visualize the data analysis we will use Tableau to create a dashboard. 
 - Bike Accidents Map
