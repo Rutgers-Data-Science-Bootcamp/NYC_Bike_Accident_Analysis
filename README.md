@@ -17,18 +17,21 @@ For this project, we analyze bike accidents across New York City from January 20
 </p>
 
 ## Questions We Would Like to Answer:
-- Does bike lanes reduce accident?
-- What are the risk factors based on the given data?
-  - Weather
+- Are there more accidents on or off bike lanes?
+- Which borough and/or streets have the most accidents?
+- What time has the most accidents?
+  - Hour
+  - Day/Night
   - Weekday
-  - Time of day
-  - Location (Borough)
+  - Month
 - How does different types of weather affect the frequency of bike accidents?
   - Rain
   - Snow
   - Visibility
   - Humidity
   - Clear
+  - Fog
+  - Cloudiness
 
 ## Resources 
 ### Description of data and data sources
