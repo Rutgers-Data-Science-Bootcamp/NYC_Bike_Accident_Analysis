@@ -21,7 +21,8 @@ For this project, we analyze bike accidents across New York City from January 20
 - Which borough and/or streets have the most accidents?
 - What time has the most accidents?
   - Hour
-  - Day
+  - Day or Night
+  - Weekday
   - Month
 - Does different types of weather affect the frequency of bike accidents?
   - Rain
