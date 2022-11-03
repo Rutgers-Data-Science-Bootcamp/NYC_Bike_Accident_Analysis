@@ -122,11 +122,11 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 ### Dashboard
 [Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
 
-To visualize the data analysis we will use Tableau to create a dashboard. 
-- Bike Accidents Map
-- Accidents per Borough
-- Accidents by time such as weekday and hour
-- Weather data during time of accident
+To visualize the data analysis we use Tableau to create a dashboard. We compared the data by the following:
+- Borough
+- Bike Lane v. No Bike Lane
+- Time (Hour, Day, Month)
+- Weather
 
 <img width="1440" alt="Screen Shot 2022-11-02 at 9 08 23 PM" src="https://user-images.githubusercontent.com/105958160/199630145-f9c4f02a-045e-4385-96d4-1ecaea6e444a.png">
 
