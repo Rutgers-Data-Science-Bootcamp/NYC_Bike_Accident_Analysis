@@ -101,7 +101,14 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 - Feature importance from the Balanced Random Forest Classifier with 100 iteration:
 ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
 
-##### Disadvanatges
+##### Limitations
+* Random Forests are not easily interpretable. They provide feature importance but it does not provide complete visibility into the coefficients as linear regression.
+* Random Forests can be computationally intensive for large datasets.
+* Random forest is like a black box algorithm, you have very little control over what the model does.
+* It requires very large amount of data in order to perform better than other techniques.
+* It is extremely expensive to train due to complex data models. Moreover deep learning requires expensive GPUs and hundreds of machines. This increases cost to the users.
+* Having more layers always does not mean that will have better accuracy.
+* It May Take Time (and Resources) for Machine Learning to Bring Results.
 
 ### Dashboard
 [Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
