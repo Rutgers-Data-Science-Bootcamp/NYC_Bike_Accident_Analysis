@@ -112,6 +112,12 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 * However, Random forest is like a black box algorithm, you have very little control over what the model does.
 
 #### Neural Network Trial (this is our extra work to try with Neural Network deep learning)
+* It requires very large amount of data in order to perform better than other techniques.
+* It is extremely expensive to train due to complex data models. Moreover deep learning requires expensive GPUs and hundreds of machines. This increases cost to the users.
+* Neural Network has more layers to train and test but it does not necessarily mean that will bring better results.
+* It may take time (and resources) for Machine Learning to bring results.
+* Random Forests has better efficiency than Neural Network. Neural Network takes longer time to get work done.
+
 - Code is here: 
 https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/ML_NEURAL_NETWORK_trial.ipynb
 ##### Advantage and Limitations
