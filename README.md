@@ -17,21 +17,18 @@ For this project, we analyze bike accidents across New York City from January 20
 </p>
 
 ## Questions We Would Like to Answer:
-- Are there more accidents on or off bike lanes?
-- Which borough and/or streets have the most accidents?
-- What time has the most accidents?
-  - Hour
-  - Day or Night
+- Does bike lanes reduce accident?
+- What are the risk factors based on the given data?
+  - Weather
   - Weekday
-  - Month
-- Does different types of weather affect the frequency of bike accidents?
+  - Time of day
+  - Location (Borough)
+- How does different types of weather affect the frequency of bike accidents?
   - Rain
   - Snow
   - Visibility
+  - Humidity
   - Clear
-  - Fog
-  - Haze
-  - Cloudiness
 
 ## Resources 
 ### Description of data and data sources
@@ -108,15 +105,11 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 - Feature importance from the Balanced Random Forest Classifier with 100 iteration:
 ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
 
-##### Limitations
-* Random Forests are not easily interpretable. They provide feature importance but it does not provide complete visibility into the coefficients as linear regression.
+##### Advantage and Limitations
+* We initially wanted to have ML to predict risk of bike riding, however, due to the fact that we only have bike accident data not total bike ride. Therefore, we did ML prediction on bike lane or not by using logistic regression Random forest classifier.  
+* Random Forests Classifier provides feature importance which allowed us visual 
 * Random Forests can be computationally intensive for large datasets.
 * Random forest is like a black box algorithm, you have very little control over what the model does.
-* It requires very large amount of data in order to perform better than other techniques.
-* It is extremely expensive to train due to complex data models. Moreover deep learning requires expensive GPUs and hundreds of machines. This increases cost to the users.
-* Neural Network has more layers but it always does not mean that will have better accuracy.
-* It May Take Time (and Resources) for Machine Learning to Bring Results.
-* Random Forests has better efficiency than Neural Network. Neural Network takes longer time to get work done.
 
 #### Neural Network Trial (this is our extra work to try with Neural Network deep learning)
 - Code is here: 
@@ -125,14 +118,13 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 ### Dashboard
 [Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
 
-To visualize the data analysis we use Tableau to create a dashboard. We compared the data by the following:
-- Borough
-- Bike Lane v. No Bike Lane
-- Time (Hour, Day, Month)
-- Weather
-
-<img width="1440" alt="Screen Shot 2022-11-02 at 9 08 23 PM" src="https://user-images.githubusercontent.com/105958160/199630145-f9c4f02a-045e-4385-96d4-1ecaea6e444a.png">
+To visualize the data analysis we will use Tableau to create a dashboard. 
+- Bike Accidents Map
+- Accidents per Borough
+- Accidents by time such as weekday and hour
+- Weather data during time of accident
 
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
 
+[Google Storyboard](https://app.boords.com/s/llowv4/frame)
