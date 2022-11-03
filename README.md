@@ -131,5 +131,7 @@ To visualize the data analysis we will use Tableau to create a dashboard.
 - Accidents by time such as weekday and hour
 - Weather data during time of accident
 
+<img width="1440" alt="Screen Shot 2022-11-02 at 9 08 23 PM" src="https://user-images.githubusercontent.com/105958160/199637191-abc3102c-deb5-4b12-a1b7-b550277fd823.png">
+
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
