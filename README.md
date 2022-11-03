@@ -79,10 +79,6 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 
 
 ### Machine Learning
-#### Random Forest Classifier
-- Code is here: 
-https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/Final_project_NYC_BIKE_All_ML_xSegment3.ipynb
-
 - After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare data for ML and loaded it into the database as an ML_data table. From this dynamic database, read the ML_data table and print out the header for each column to see all of the features available. 
 
 <img width="1385" alt="Screen Shot 2022-10-30 at 10 57 30 PM" src="https://user-images.githubusercontent.com/65901034/198922259-74974974-9403-4c5c-99e6-2eac201383de.png">
@@ -114,18 +110,14 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 * Having more layers always does not mean that will have better accuracy.
 * It May Take Time (and Resources) for Machine Learning to Bring Results.
 
-#### Neural Network Trial (this is our extra work to try with Neural Network deep learning)
-- Code is here: 
-https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/ML_NEURAL_NETWORK_trial.ipynb
-
 ### Dashboard
 [Tableau Link](https://public.tableau.com/authoring/NYCBikeRiskProject/BikeAccidentsMap_1#2)
 
-To visualize the data analysis we will use Tableau to create a dashboard. 
-- Bike Accidents Map
-- Accidents per Borough
-- Accidents by time such as weekday and hour
-- Weather data during time of accident
+To visualize the data analysis we will use Tableau to create a dashboard. We compared data by the following:
+- Borough
+- Time (Hours, Days, Months)
+- Bike Lane v. No Bike Lane
+- Weather 
 
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
