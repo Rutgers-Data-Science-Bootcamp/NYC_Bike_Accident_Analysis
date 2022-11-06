@@ -69,7 +69,9 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 
 - NYC_bike_lanes: First, we dropped the duplicated rows based on STREET NAME to get unique streets with bike lanes, then we split the BIKE_GEOME column into four geo parameters as it has two pairs of geolocation of the street (from street to street). This news LAT1, LAT2, LON1, and LON2 were used to get the bike lane column for the crash data by matching the accident location (lat and lon) within the two pairs of location parameters.
 
-- Final dataset: contains NYC bike crash data, weather data, and bike lane data, which we are using for EDA and Visualization with Tableau. Also, selected features are selected for ML model training.      
+- Final dataset: contains NYC bike crash data, weather data, and bike lane data, which we are using for EDA and Visualization with Tableau. Also, selected features are selected for ML model training.   
+-    <img width="575" alt="Screen Shot 2022-11-06 at 5 39 48 PM" src="https://user-images.githubusercontent.com/65901034/200199296-2933e180-2c98-4f1f-9e9f-f1901a37b4ca.png">
+
 
 ### Database: 
 - Crash and weather data are loaded into the SQL database and merged with SQL code. Crash_data, weather_data, merged data, and NYC_borough_zipcode data are stored in our database as tables; We stored all the tables in our GitHub database folder as well as we have our local database from where we are going to load merged_data by using SQLite in our python code for further analysis and modeling.
