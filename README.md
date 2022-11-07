@@ -114,7 +114,7 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 * We initially wanted to have ML to predict risk of bike riding, however, due to the fact that we only have bike accident data not total bike ride. Therefore, we did ML prediction on bike lanes or not by using logistic regression Random forest classifier.  
 * Random Forests Classifier provides feature importance which allowed us visualize the features with importance.
 * Random Forests can be computationally much faster than Neural Network.
-* However, Random forest is like a black box algorithm, you have very little control over what the model does.
+* We still have rooms to improve the accuracy score as Random forests are found to be biased while dealing with categorical variables because we have more categorical data than numerical data in our dataset. 
 
 #### Limitations of Neural Network (this is our extra work to try with Neural Network deep learning).
 * It requires very large amount of data in order to perform better than other techniques.
