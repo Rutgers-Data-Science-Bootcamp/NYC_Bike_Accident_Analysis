@@ -138,5 +138,12 @@ To visualize the data analysis we used Tableau. Our dashboard displays the compa
 
 <img width="1440" alt="Screen Shot 2022-11-02 at 9 08 23 PM" src="https://user-images.githubusercontent.com/105958160/199637191-abc3102c-deb5-4b12-a1b7-b550277fd823.png">
 
+## Conclusions
+    - More accidents occur off the bike lanes than on bike lanes. 
+    - There are more accidents when it is clear outside because more people desire to ride bikes in pleasant weather.
+    - More accidents in the borough of Bronx and the least accidents in the borough of Staten Island. 
+    - Rush hours tend to have more bike accidents, especially Tuesdays and Fridays.
+    - Our ML model has an accuracy of over 82% in predicting bike lanes.
+
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
