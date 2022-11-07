@@ -85,8 +85,8 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 
 ### Machine Learning
 #### Random Forest Classifier
-- Code is here: 
-https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/Final_project_NYC_BIKE_All_ML_xSegment3.ipynb
+- [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/Final_project_NYC_BIKE_All_ML_xSegment3.ipynb) 
+
 
 - After connecting our jupyter notebook to the database by SQLAlchemy, we performed ETL to prepare data for ML and loaded it into the database as an ML_data table. From this dynamic database, read the ML_data table and print out the header for each column to see all of the features available. 
 
