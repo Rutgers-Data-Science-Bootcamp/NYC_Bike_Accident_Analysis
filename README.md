@@ -122,8 +122,7 @@ https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtab
 * Neural Network has more layers to train and test but it does not necessarily mean that will bring better results.
 * Random Forests has better efficiency than Neural Network. Moreover, Neural Network takes longer time to get work done.
 
-- Code is here: 
-https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/ML_NEURAL_NETWORK_trial.ipynb
+- [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/Data_EDAtableau_ML_xSegment3/ML_NEURAL_NETWORK_trial.ipynb) 
 
 
 ### Dashboard
