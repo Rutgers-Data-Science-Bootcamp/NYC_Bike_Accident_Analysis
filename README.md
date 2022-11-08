@@ -122,7 +122,7 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 * Neural Network has more layers to train and test but it does not necessarily mean that will bring better results.
 * Random Forests has better efficiency than Neural Network. Moreover, Neural Network takes longer time to get work done.
 
-- [Code is here]() 
+- [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/ETL_ML_codes/ML_NEURAL_NETWORK_trial.ipynb) 
 
 
 ### Dashboard
