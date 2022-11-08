@@ -1,4 +1,4 @@
-# NYC Bike Risk Predictor
+# NYC Bike Risk 
 Rutgers University Data Science Bootcamp Final Project
 
 ### Group Members:
