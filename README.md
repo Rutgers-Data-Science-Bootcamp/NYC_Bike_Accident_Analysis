@@ -1,4 +1,4 @@
-# NYC Bike Risk 
+# NYC Bike Accidents
 Rutgers University Data Science Bootcamp Final Project
 
 ### Group Members:
