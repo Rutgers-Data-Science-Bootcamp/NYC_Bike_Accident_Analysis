@@ -117,10 +117,10 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 * Random Forests can be computationally much faster than Neural Network.
 * We still have rooms to improve the accuracy score as Random forests are found to be biased while dealing with categorical variables because we have more categorical data than numerical data in our dataset. 
 
-### Neural Network Deep Learning Model (this is our extra work to try with Neural Network deep learning) [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/ETL_ML_codes/ML_NEURAL_NETWORK_trial.ipynb).
-* Random Forests has better efficiency than Neural Network. Moreover, Neural Network takes longer time to get work done.
-* Neural Network has more layers to train and test but it does not necessarily mean that will bring better results.
+#### Neural Network Deep Learning Model (this is our extra work with Neural Network deep learning) [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/ETL_ML_codes/ML_NEURAL_NETWORK_trial.ipynb).
+* Random Forests has better efficiency than Neural Network. Moreover, Neural Network takes longer time to perform analysis.
 ##### Limitations:
+* Neural Network has more layers to train and test but it does not necessarily mean that will bring better results.
 * It requires very large amount of data in order to perform better than other techniques.
 * It is extremely expensive to train due to complex data models. Moreover deep learning requires expensive GPUs and hundreds of machines. This increases cost to the users.
 
