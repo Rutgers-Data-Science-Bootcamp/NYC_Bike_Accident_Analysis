@@ -1,7 +1,8 @@
 # NYC Bike Accidents
 Rutgers University Data Science Bootcamp Final Project
 
-### Group Members:
+## Team name: Met-A-Four 
+### TeamMembers:
 | Member               	| Role 	                 | Responsibilities                                                 |
 |----------------------	|---------------------   | -------------                                                    |
 | [Shirali Obul](https://github.com/ShiraliObul)|  Project Manager    	 |  Manage the Project flow, Technology and Communication  |
