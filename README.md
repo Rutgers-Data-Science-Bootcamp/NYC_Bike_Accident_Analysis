@@ -60,6 +60,7 @@ NYC_Bike_Risk -- This database uses a multitude of factors to input details on a
 - Tableau
 - Google Slides
 
+**[`^        back to top        ^`](#nyc-bike-accidents)**
 
 ## Data Cleaning and ETL process
 We have mainly used Python pandas library in Jupyter notebook to clean the data from 3 different resources: NYC_Crash_cyclist 2020-2022, NYC_Weather_2020-2022, and NYC_Bike_Lanes.
@@ -83,7 +84,7 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 - Tables post merge:
 - <img width="1409" alt="Tables_post_merge" src="https://user-images.githubusercontent.com/65901034/198350933-77414e65-e573-49d1-a202-e32c5cb8bc4c.png">
 
-
+**[`^        back to top        ^`](#project-team-members)**
 ### Machine Learning
 #### Random Forest Classifier
 - [Code is here](https://github.com/ShiraliObul/Final_Project_by_Met_A_Four/blob/main/ETL_ML_codes/Machine_Learning.ipynb) 
@@ -111,6 +112,7 @@ We have mainly used Python pandas library in Jupyter notebook to clean the data 
 - Feature importance from the Balanced Random Forest Classifier with 100 iteration:
 ![featureimportance](https://user-images.githubusercontent.com/65901034/198863195-890e4c46-894a-4a12-b161-e7e5e7501a64.png)
 
+**[`^        back to top        ^`](#project-team-members)**
 ##### Advantage and Limitations
 * We initially wanted to have ML to predict risk of bike riding, however, due to the fact that we only have bike accident data not total bike ride. Therefore, we did ML prediction on bike lanes or not by using logistic regression Random forest classifier.  
 * Random Forests Classifier provides feature importance which allowed us visualize the features with importance.
@@ -142,6 +144,6 @@ To visualize the data analysis we used Tableau. Our dashboard displays the compa
     - More accidents in the borough of Bronx and the least accidents in the borough of Staten Island. 
     - Rush hours tend to have more bike accidents, especially Tuesdays and Fridays.
     - Our ML model has an accuracy of over 82% in predicting bike lanes.
-
+**[`^        back to top        ^`](#project-team-members)**
 ## Presentation
 [Google Slides File Link](https://docs.google.com/presentation/d/1g-AAN2hNbT6YlkHPxmpXGSd241pEJA0cvLY3mLy1-SQ/edit#slide=id.g173790adf6e_1_0)
